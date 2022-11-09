@@ -32,6 +32,7 @@ mid = statistics.median(data)
 print(f'Maka Nilai rata-rata data tersebut adalah {mean}')
 print(f'Nilai modus dari data tersebut adalah {modus}')
 print(f'Nilai Median dari data tersebut adalah {mid}'
+
 ```
 
 3. Terdapat tabel grade mahasiswa sebagai berikut:
