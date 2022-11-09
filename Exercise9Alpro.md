@@ -19,7 +19,7 @@
   
  **JAWAB=**
  ```python
- import statistics
+import statistics
 data = (1,2,1,2,3,10,11,5,6,19,20,30,50,50,50,20,9,4,5,12,11,11,30,50,90,80,80)
 
 total = 0
@@ -27,11 +27,28 @@ for jumlah in range (0,len(data)):
   total = total + data[jumlah]
 
 mean = total / len(data)
-modus = max(set(data),key = data.count)
-mid = statistics.median(data)
-print(f'Maka Nilai rata-rata data tersebut adalah {mean}')
-print(f'Nilai modus dari data tersebut adalah {modus}')
-print(f'Nilai Median dari data tersebut adalah {mid}'
+print(f'Maka nilai rata-rata data tersebut adalah {mean}')
+
+#Mencari nilai unik
+unik_list = []
+
+for i in data:
+  if i not in unik_list:
+    unik_list.append(i)
+print(f'Maka nilai unik dari data tersebut adalah = {unik_list}')
+
+#Mencari frekuensi dari masing-masing nilai unik
+def hitungfreq(data):
+  freq = {}
+  for item in data:
+        if (item in freq):
+            freq[item] += 1
+        else:
+            freq[item] = 1
+ 
+  for key, value in freq.items():
+    print('frekuensi dari nilai % d : berjumlah % d '%(key, value))
+hitungfreq(data)
 
 ```
 
@@ -46,6 +63,7 @@ print(f'Nilai Median dari data tersebut adalah {mid}'
 
 - Jelaskan sequence type apa yang cocok digunakan untuk mengolah data tersebut!
 - Buatlah program untuk menghitung ipk dari setiap mahasiswa pada tabel tersebut!
+
 **JAWAB=**
 
 4. The Anagram Problem.
@@ -58,6 +76,7 @@ Buatlah program untuk mengubah sebuah string menjadi string lain dengan rule seb
 - Hasil result string seluruhnya adalah capital.
 - Tidak ada huruf yang duplikat dalam string result.
 - Posisi character si string baru terurut secara ascending, namun index genap dan ganjil di tukar dalam pair. Contoh: AEJK menjadi EAKJ.
+
 **JAWAB=**
 ```python
 masukkan = input('Masukkan teks yang anda inginkan > ')
