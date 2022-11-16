@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @NatureExplorer
 - 👀 I’m interested in data science
-- 🌱 I’m currently learning C++ and Python
+- 🌱 I’m currently learning Python
 - 💞️ I’m looking to collaborate on all friends
 - 📫 How to reach me by contacting on my email
 
